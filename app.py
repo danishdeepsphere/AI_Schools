@@ -1,5 +1,5 @@
 import streamlit as vAR_st
-#from streamlit_option_menu import option_menu
+from streamlit_option_menu import option_menu
 from PIL import Image
 import pyautogui
 import area_perimeter as ap
