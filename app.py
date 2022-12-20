@@ -10,7 +10,7 @@ import source.square as sc
 from source.statistics import stat
 
 vAR_st.set_page_config(layout='wide')
-with open('style\style2.css') as vAR_f:
+with open('style/style2.css') as vAR_f:
     vAR_st.markdown (f"<style>{vAR_f.read()}</style>",unsafe_allow_html=True)
 
 if 'placeholder' not in vAR_st.session_state:
