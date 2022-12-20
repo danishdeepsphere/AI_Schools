@@ -125,3 +125,13 @@ div.css-6qob1r.e1fqkh3o3 {
     border-radius: 5px;
     width: 270px;
 }
+.css-163ttbj {
+    position: relative;
+    top: 2px;
+    background-color: rgb(252 252 252);
+    z-index: 999991;
+    min-width: 260px;
+    max-width: 269px;
+    transform: none;
+    transition: transform 300ms ease 0s, min-width 300ms ease 0s, max-width 300ms ease 0s;
+}
