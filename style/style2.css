@@ -58,8 +58,8 @@ div.css-q31e9c.e1tzin5v3{
     top: 2px;
     background-color: rgb(223, 223, 226);
     z-index: 999991;
-    min-width: 340px;
-    max-width: 300px;
+    min-width: 270px;
+    max-width: 280px;
     transform: none;
     transition: transform 300ms ease 0s, min-width 300ms ease 0s, max-width 300ms ease 0s;
 }
