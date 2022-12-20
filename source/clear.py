@@ -7,8 +7,6 @@ def button_clear():
 def button_rad():
     vAR_st.session_state["rad"]= 0
     vAR_st.session_state["rad2"]= 0
-    vAR_st.session_state["mean_in"]=""
-    vAR_st.session_state["mmm"]="Mean"
     vAR_st.session_state["main"]="Area & Perimeter"
     vAR_st.session_state.placeholder = "select"
 
