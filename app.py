@@ -4,9 +4,9 @@ from PIL import Image
 import pyautogui
 import source.area_perimeter as ap
 import source.clear as cr
-import source.fact
+import source.fact as fact
 import source.palindrome_ as pld
-import source.prime
+import source.prime as prime
 import source.square as sc
 from source.statistics import stat
 
