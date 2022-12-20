@@ -1,7 +1,6 @@
 import streamlit as vAR_st
 from streamlit_option_menu import option_menu
 from PIL import Image
-import pyautogui
 import source.area_perimeter as ap
 import source.clear as cr
 import source.fact as fact
@@ -29,8 +28,8 @@ with col3:
 with vAR_st.sidebar:
     selected=vAR_st.selectbox("Menu",('Area & Perimeter','Factorial','Square and Cube','Statistics','Palindrome','Prime or not'))
     vAR_lib=vAR_st.selectbox("",("Libraries","Streamlit","Pillow"))
-    if vAR_st.button("Clear/Reset"):
-        pyautogui.hotkey("ctrl","F5")
+    vAR_st.button("Clear/Reset", on_click=cr.button_rad)
+        
 
 if __name__=="__main__":
     try:
