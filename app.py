@@ -16,7 +16,7 @@ with open('style/style2.css') as vAR_f:
 if 'placeholder' not in vAR_st.session_state:
     vAR_st.session_state.placeholder = "select"
 
-col1, col2, col3 = vAR_st.columns([3,5,3])
+col1, col2, col3 = vAR_st.columns((3,5,3))
 with col1:
     vAR_st.write("")
 with col2:
