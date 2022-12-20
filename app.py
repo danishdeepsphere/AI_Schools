@@ -26,7 +26,7 @@ with col3:
     vAR_st.write("")
 
 with vAR_st.sidebar:
-    selected=vAR_st.selectbox("Menu",('Area & Perimeter','Factorial','Square and Cube','Statistics','Palindrome','Prime or not'))
+    selected=vAR_st.selectbox("Menu",('Area & Perimeter','Factorial','Square and Cube','Statistics','Palindrome','Prime or not'),key="main")
     vAR_lib=vAR_st.selectbox("",("Libraries","Streamlit","Pillow"))
     vAR_st.button("Clear/Reset", on_click=cr.button_rad)
         
