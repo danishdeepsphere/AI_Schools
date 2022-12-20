@@ -6,6 +6,7 @@ import source.clear as cr
 import source.fact as fact
 import source.palindrome_ as pld
 import source.prime as prime
+import source.ratio as rio
 
 from source.statistics import stat
 
@@ -25,7 +26,7 @@ with col3:
     vAR_st.write("")
 
 with vAR_st.sidebar:
-    selected=vAR_st.selectbox("Menu",('Area & Perimeter','Factorial','Statistics','Palindrome','Prime or not'),key="main")
+    selected=vAR_st.selectbox("Menu",('Area & Perimeter','Factorial','Statistics','Palindrome','Prime or not','Ratio'),key="main")
     vAR_lib=vAR_st.selectbox("",("Libraries","Streamlit","Pillow"))
     vAR_st.button("Clear/Reset", on_click=cr.button_rad)
         
@@ -42,5 +43,7 @@ if __name__=="__main__":
             prime.primeornot()
         if selected=="Statistics":
             stat()
+        if selected=="Ratio":
+            rio.ratio()
     except BaseException as error:
         vAR_st.error(error)
