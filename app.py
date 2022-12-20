@@ -6,7 +6,7 @@ import source.clear as cr
 import source.fact as fact
 import source.palindrome_ as pld
 import source.prime as prime
-import source.square as sc
+
 from source.statistics import stat
 
 vAR_st.set_page_config(layout='wide')
@@ -25,7 +25,7 @@ with col3:
     vAR_st.write("")
 
 with vAR_st.sidebar:
-    selected=vAR_st.selectbox("Menu",('Area & Perimeter','Factorial','Square and Cube','Statistics','Palindrome','Prime or not'),key="main")
+    selected=vAR_st.selectbox("Menu",('Area & Perimeter','Factorial','Statistics','Palindrome','Prime or not'),key="main")
     vAR_lib=vAR_st.selectbox("",("Libraries","Streamlit","Pillow"))
     vAR_st.button("Clear/Reset", on_click=cr.button_rad)
         
@@ -40,8 +40,6 @@ if __name__=="__main__":
             pld.palindrome()
         if selected=="Prime or not":
             prime.primeornot()
-        if selected=="Square and Cube":
-            sc.squarecube()
         if selected=="Statistics":
             stat()
     except BaseException as error:
