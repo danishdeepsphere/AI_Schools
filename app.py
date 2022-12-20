@@ -20,8 +20,8 @@ col1, col2, col3 = vAR_st.columns([1.5,5,2])
 with col1:
     vAR_st.write("")
 with col2:
-    vAR_img = img.open("image/Logo_final.png")
-    vAR_st.image(vAR_img,width=500)
+    #vAR_img = img.open("image/Logo_final.png")
+    vAR_st.image(https://raw.githubusercontent.com/tarun243/Streamlit-commonToAllIndustry/master/Web_app/Logo_final.png)
 with col3:
     vAR_st.write("")
 
