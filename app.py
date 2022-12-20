@@ -20,7 +20,7 @@ col1, col2, col3 = vAR_st.columns([1.5,5,2])
 with col1:
     vAR_st.write("")
 with col2:
-    vAR_img = Image.open("image/Logo_final.png")
+    vAR_img = image.open("image/Logo_final.png")
     vAR_st.image(vAR_img,width=500)
 with col3:
     vAR_st.write("")
