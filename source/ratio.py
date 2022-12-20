@@ -25,16 +25,16 @@ def ratio():
         if vAR_st.button("Submit"):
             try:
                 z=str(int(int(round(x/(math.gcd(x,y)),0))))+':'+str(int(round(y/(math.gcd(x,y)),0)))
-            
+            except ZeroDivisionError:
+                with col2:
+                    vAR_st.subheader("Cannot Divide by zero")
             with col1:
                 vAR_st.markdown("###")
                 vAR_st.markdown("### Answer is")
             with col2:
                 vAR_st.write('')
                 vAR_st.subheader(z)
-            except ZeroDivisionError:
-                with col2:
-                    vAR_st.subheader("Cannot Divide by zero")
+            
     with bc2:
         vAR_st.button("Clear",on_click=cleartext)
 
