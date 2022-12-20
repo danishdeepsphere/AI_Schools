@@ -111,3 +111,10 @@ div.css-gggys9.e1fqkh3o0 {
     background-color: rgb(47 236 106);
     border: 1px solid rgba(2, 2, 12, 0.2);
 }
+.css-gggys9 {
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    cursor: col-resize;
+    z-index: 999995;
+}
