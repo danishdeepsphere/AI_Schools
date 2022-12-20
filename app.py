@@ -1,6 +1,6 @@
 import streamlit as vAR_st
 from streamlit_option_menu import option_menu
-from PIL import Image
+from PIL import Image as img
 import source.area_perimeter as ap
 import source.clear as cr
 import source.fact as fact
@@ -20,7 +20,7 @@ col1, col2, col3 = vAR_st.columns([1.5,5,2])
 with col1:
     vAR_st.write("")
 with col2:
-    vAR_img = image.open("image/Logo_final.png")
+    vAR_img = img.open("image/Logo_final.png")
     vAR_st.image(vAR_img,width=500)
 with col3:
     vAR_st.write("")
